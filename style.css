@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    background-color: rgb(246, 246, 233);
+    position:relative;
+    padding-top:1px;
+}
+#nav{
+    height:12vh;
+    width:100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h2{
+    /* background-color: aqua; */
+    height: 100%;
+    width:16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    letter-spacing: -3px;
+}
+#nav h3{
+    /* background-color: aqua; */
+    height: 100%;
+    width:19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size:21px;
+    font-weight: 550;
+}
+
+#nav h3:nth-last-child(1){
+    width:10%;
+    
+}
+#nav h3:nth-last-child(2){
+    width:30%;
+    
+}
+#nav h3:nth-last-child(3){
+    width:20%;
+    
+}
+#center{
+    height:90%;
+    width:100%;
+    /* background-color: red; */
+    padding:4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width:100%;
+    /* background-color: aqua; */
+    position: relative;
+}
+#content video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 55%;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    /* background-color: red; */
+    padding:3dvw;
+    color: white;
+}
+#over1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding : 5px; */
+    margin-bottom: 2vw;;
+    /* mix-blend-mode: difference; */
+}
+#over1 h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:2.8vw;
+    font-weight:590;
+    letter-spacing: 0.3vw;
+}
+#over1 h2{
+    font-size: 1.2vw;
+    padding:2vw 2.2vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 3px solid white;
+}
+#over2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+   font-size: 1.3vw;
+   font-weight: 500;
+}
+
+#over2 img{
+    height:3vw;
+}
+
+#scroll{
+    height: 30vh;
+    width:100%;
+    /* background-color: brown; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+#container{
+    height:100%;
+    width:100%;
+    display: inline-block;
+    padding: 0vw 1.5vw 1.5vw 1.5vw; 
+    
+    animation: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+#scroll img{
+    /* display: none; */
+    height: 85%;
+    width:10%;
+    margin:2vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+#alphabet{
+    height:11vh;
+    width:100%;
+    /* background-color: red; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:1vw;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+
+}
+#alphabet h5{
+    font-size:1.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing:4px;
+    margin-right: 2vw;
+}
+#alphabet h6{
+    font-size:1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing:4px;
+    padding:0.4vw 0.6vw;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+#alphabet h6:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#page2{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2vw 5vw;
+    
+}
+#page2-part1{
+    height:100%;
+    width:50%;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+#page2-part2{
+    height:100%;
+    width:45%;
+    /* background-image: url(https://img.freepik.com/premium-photo/women-kurti-with-pant-dupatta_953724-525.jpg?w=360);
+    background-size: cover;
+    /* background-position: center;  */
+    /* background-repeat: no-repeat; */ 
+}
+
+#page2-part2 img{
+    height:80%;
+    width: 95%;
+    margin-left: 4vw;
+}
+#part2-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width:95%;
+    margin-left: 4vw;
+}
+#content1{
+    padding-top: 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.15vw;
+
+}
+#content2{
+    padding-top: 0.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: blue; */
+    margin-top: -1vw;
+
+}
+#a{
+    margin-left: 5vw;
+    margin-top: -1.5vw;
+    letter-spacing:0.5vw;
+}
+
+
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 6vw 3vw 5vw 2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+#page3-part1{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#circular{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#circular .circleAnimation{
+    animation: anime 10s linear  infinite;
+    mix-blend-mode: multiply;
+}
+#circular .arrows{
+    position: absolute;
+    mix-blend-mode: difference;
+}
+@keyframes anime {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#text{
+    padding-left: 0;
+}
+#text h6{
+    font-size: 1.2vw;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page3-part2{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    background-image: url(https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -15vw;
+}
+
+#page4{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 3vw;
+    padding-left: 5vw;
+}
+#page4 img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
