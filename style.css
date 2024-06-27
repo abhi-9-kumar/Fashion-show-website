@@ -15,7 +15,7 @@ body{
 #main{
     height:100%;
     width:100%;
-    background-color: rgb(246, 246, 233);
+    /* background-color: rgb(250, 250, 250); */
     position:relative;
     padding-top:1px;
 }
@@ -91,18 +91,18 @@ body{
 #center{
     height:90%;
     width:100%;
-    /* background-color: red; */
     padding:2vw;
+    
     position: relative;
 }
-#content{
+#main-content{
     height: 100%;
     width:100%;
-    /* background-color: aqua; */
     position: relative;
+    margin-right: 0;
    
 }
-#content video{
+#main-content video{
     height:100%;
     width:100%;
     object-fit: cover;
@@ -649,7 +649,7 @@ body{
     /* background-color: brown; */
     padding:2vw 1vw 1vw 1vw;
 }
-#content img{
+#content1 img{
     width: 100%;
     height: 85%;
     object-fit: cover;
