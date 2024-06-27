@@ -9,6 +9,9 @@ html,body{
     height: 100%;
     width:100%;
 }
+body{
+    background-color: #F8F8F8;
+}
 #main{
     height:100%;
     width:100%;
@@ -37,7 +40,30 @@ html,body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 45px;
     letter-spacing: -3px;
+    position: relative;
 }
+#nav h2::after{
+    content:"©";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    top:20%;
+    right:12%;
+}
+#nav h2::before{
+    content:"model management";
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.925);
+    letter-spacing: 0.1px;;
+    position: absolute;
+    bottom:10%;
+    right:12%;
+}
+
+
 #nav h3{
     /* background-color: aqua; */
     height: 100%;
@@ -66,7 +92,7 @@ html,body{
     height:90%;
     width:100%;
     /* background-color: red; */
-    padding:4vw;
+    padding:2vw;
     position: relative;
 }
 #content{
@@ -74,6 +100,7 @@ html,body{
     width:100%;
     /* background-color: aqua; */
     position: relative;
+   
 }
 #content video{
     height:100%;
@@ -86,7 +113,7 @@ html,body{
     position:absolute;
     bottom:0;
     /* background-color: red; */
-    padding:3dvw;
+    padding:3vw;
     color: white;
 }
 #over1{
@@ -113,19 +140,19 @@ html,body{
     border: 1px solid white;
     border-bottom: 3px solid white;
 }
-#over2{
+#overlay2{
     display:flex;
     align-items: center;
     justify-content: space-between;
     border-top: 2px solid white;
     padding: 1.5vw 0;
 }
-#over2 h4{
+#overlay2 h4{
    font-size: 1.3vw;
    font-weight: 500;
 }
 
-#over2 img{
+#overlay2 img{
     height:3vw;
 }
 
@@ -340,4 +367,382 @@ html,body{
     background-size: cover;
     
 }
-/* jasaaXMZ */
+
+#page5{
+    height:100%;
+    width:100%;
+    position:relative;
+    padding:5vw 4vw;
+}
+
+#page5>h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* font-weight: 1000; */
+    margin-bottom: 7vh;
+    
+}
+
+.elem{
+    height:15.5vh;
+    width:100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease 0.7s;
+}
+.elem img{
+    height:14vh;
+    width:8.5vw;
+    position:absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    left:12%;
+    opacity:0;
+    transition: all ease 0.7s;
+}
+
+.elem h4{
+    font-size:1.1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    width:6%;
+}
+.elem #elem-part2{
+    width:40%;
+    /* background-color: aqua; */
+}
+#elem-part2 h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+#elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+.elem:nth-last-child(1) img{
+    left:50%;
+}
+.elem:nth-last-child(3) img{
+    left:50%;
+}
+.elem:hover{
+    background-color: rgba(155, 154, 153, 0.484);
+}
+.elem:hover img{
+    opacity:1;
+    left:25%;
+}
+
+#page6{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+#page6-left{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1562572159-4efc207f5aff?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#page6-content{
+    width: 55%;
+    height: 100%;
+   
+}
+#page6-content .text{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom:1.5vw;
+}
+#page6-content .text h1{
+    font-family: monument;
+    font-size: 4vw;
+}
+#page6-content .text h4{
+    width: 60%;
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#page6-content .text {
+    font-size: 1.2vw;
+}
+#page6-img{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 1vw;
+}
+#left-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 0 20%;
+    background-size: cover;
+}
+#right-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1590926938512-c0d7e5c39abd?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 0 20%;
+    background-size: cover;
+}
+#page7{
+    width: 100%;
+    height: 100vh;
+    padding: 3vw 5vw 2vw 5vw;
+    
+}
+#page7 img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    /* background-size: cover; */
+    
+}
+#page8{
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    position: relative;
+}
+
+#page8-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1542012252680-7b802edd2570?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+#page8-right{
+    width: 40%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+#page8-right img{
+    width: 95;
+    height: 80%;
+}
+#page8-content{
+    display: flex;
+    padding-top: 1vw;
+}
+#page8-content h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15vw;
+    width:45%
+}
+#page8-content h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    width:40%;
+}
+#marque{
+    margin-top: 5vw;
+    height:15vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    /* overflow-x:auto; */ /* scrollable ban jayega */
+    overflow-y:hidden; 
+    overflow-x:hidden;
+    padding:2vw;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+}
+#marque h1{
+    display:inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:monument;
+    font-weight: 4vw;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color:transparent;
+    margin-right: 16px;
+    animation-name: move2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move2{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(calc(-100% - 20px)); /*16px+4px(default)*/
+    }
+}
+
+#blog{
+    width: 100%;
+    height: 100vh;
+    padding: 4vw 5vw;
+}
+#blog-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5vw;
+    padding: 1vw;
+    padding-left: 0vw;
+    /* background-color: aqua; */
+}
+#blog-content h3{
+    font-family: monument;
+    font-size: 3vw;
+}
+#content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    /* background-color: red; */
+}
+#content p{ 
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: arial;
+}
+#content p span{
+    border: 1px solid black;
+    padding: 3px 9px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: justify;
+}
+#content1{
+    /* background-color: blue; */
+    padding:1vw;
+}
+#content2{
+    /* background-color: brown; */
+    padding:2vw 1vw 1vw 1vw;
+}
+#content img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    object-position: 0 20%;
+    padding-top: 2vw;
+
+}
+#content2 img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    object-position: 0 20%;
+
+}
+#footer{
+    width: 100%;
+    height: 50vh;
+    border-top: 2px solid black;
+    margin-top: 35px;
+    border-bottom: 2px solid black;
+    display: flex;
+    margin-bottom: 5vw;
+    /* background-color: aqua; */
+}
+#footer h1{
+    width: 30%;
+    padding: 2vw 6vw;
+    font-family: monument;
+    position: relative;
+} 
+#footer h2:nth-child(2){
+    width: 20%;
+    padding: 2vw 6vw;
+    border-right: 2px solid black;
+    font-weight: 400;
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+#footer h2:nth-child(3){
+    width: 20%;
+    padding: 2vw 2vw;
+    border-right: 2px solid black;
+    font-weight: 400;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+#footer div{
+    width: 30%;
+    /* background-color: blue; */
+}
+#footer div h2{
+    border-bottom: 2px solid black;
+    /* margin-top: 2vw;      */
+    padding: 2vw;
+    font-weight: 400;
+    text-align: center;
+}
+#footer div p{
+    padding-top: 2vw;
+}
+#footer h1::after{
+    content: '©️';
+    font-family: sans-serif;
+    position: absolute;
+    right: 30%;
+    font-size: 1.8vw;
+    top: 10%;
+}
+#footer h1::before{
+    content: "model management";
+    font-family: sans-serif;
+    top: 25%;
+    position: absolute;
+    font-size: 1vw;
+    letter-spacing: 0;
+    font-weight: 400;
+    right: 35%;
+    color: rgb(76, 76, 76);
+}
+#footer .icons{
+    width: 100%;
+    padding-left: 3vw;
+    margin-top: 2vw;
+}
+#footer .icons i{
+    font-size: 1.7vw;
+    margin-right: 1vw;
+}
+
+#end{
+    width:100%;
+    height:1%;
+    /* background-color: aqua; */
+}
+
+
